@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   const board = document.getElementById('board');
-  board.height = 300;
-  board.width = 300;
+  board.height = 600;
+  board.width = 1000;
 });
