@@ -2,7 +2,8 @@
 
 ### Background
 
-Breakout Clone (name TBD) is a JavaScript game inspired by Atari's Breakout video game. The goal of the game is to  bounce a ball on a paddle in order to break all of the bricks.
+Breakout Clone (name TBD) is a JavaScript game inspired by Atari's Breakout video game.
+The goal of the game is to  bounce a ball on a paddle in order to break all of the bricks.
 
 ### Functionality & MVP
 
@@ -19,16 +20,18 @@ This project will be implemented with the following technologies:
 
 - `JavaScript` for game logic
 - `Webpack` to bundle js files.
+- `HTML Canvas` to render game elements
 
-### Wireframes
+### Wireframe
 
+![Wireframe](wireframe.png)
 
 ### Implementation Timeline
 
-**Day 1**: Setup all necessary Node modules, including getting webpack up and running.
+**Day 1**: Setup all necessary Node modules. Create canvas elements for paddle, ball, bricks,
+and game board.
 
-**Day 2**:
+**Day 2**: Write game logic including ball trajectory and bricks being destroyed.
 
-**Day 3**:
-
-**Day 4**: Install the controls for the user to interact with the game.  Style the frontend, making it polished and professional.
+**Day 3**: Install the controls for the user to interact with the game.  
+Style the frontend to evoke the feel of Atari's Breakout.
