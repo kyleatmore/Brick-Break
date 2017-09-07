@@ -15,15 +15,4 @@ document.addEventListener('DOMContentLoaded', () => {
   window.ctx = ctx;
   window.ball = game.ball;
 
-  document.addEventListener("keydown", (event) => {
-    switch(event.keyCode) {
-      case 39:
-        game.paddle.move(20);
-        break;
-      case 37:
-        game.paddle.move(-20);
-        break;
-    }
-  });
-
 });
