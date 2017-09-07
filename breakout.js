@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.paddle = paddle;
   window.bricks = game.bricks;
   window.ctx = ctx;
-  // window.ball = game.ball;
-  //
+  window.ball = game.ball;
+
   document.addEventListener("keydown", (event) => {
     switch(event.keyCode) {
       case 39:
@@ -24,6 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         break;
     }
   });
-  //
-  // setInterval(() => { game.ball.move(); }, 200);
+
+  setInterval(() => { game.ball.move(); }, 100);
 });
