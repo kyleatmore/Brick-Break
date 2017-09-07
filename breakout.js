@@ -25,5 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  setInterval(() => { game.ball.move(); }, 100);
+  // setInterval(() => { game.ball.move(); }, 100);
 });
