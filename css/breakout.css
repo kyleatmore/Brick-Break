@@ -1,3 +1,45 @@
+body {
+  background-image: url("../assets/sci_fi_bg1.jpg");
+  background-color: #778095;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Orbitron', sans-serif;
+}
+
 #board {
-  border: 5px solid black;
+  border: 5px solid #311118;
+  margin: 0 auto;
+  background-color: #5C6883;
+}
+
+.game-screen {
+  width: 710px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin: 15px 0;
+}
+
+.header h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: underline;
+  color: #ABB4BB;
+}
+
+.footer {
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
