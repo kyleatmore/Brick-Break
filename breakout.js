@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   canvas.width = 700;
   const ctx = canvas.getContext('2d');
   const game = new Game(ctx);
-  game.gameView.start();
+  //
+  // game.gameView.start();
 
   window.game = game;
   window.paddle = game.paddle;
@@ -15,4 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.ctx = ctx;
   window.ball = game.ball;
 
+
+  const startButton = document.getElementById('start-button');
+  startButton.addEventListener('click', () => {
+    game.start();
+  });
 });
