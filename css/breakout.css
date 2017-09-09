@@ -7,14 +7,12 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
-#board {
-  border: 5px solid #311118;
-  margin: 0 auto;
-  background-color: #5C6883;
+li {
+  list-style: none;
 }
 
 .game-screen {
-  width: 710px;
+  width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
@@ -33,6 +31,68 @@ a {
   color: #ABB4BB;
 }
 
+.game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#board {
+  border: 5px solid #311118;
+  background-color: #5C6883;
+}
+
+.rules-aside {
+  width: 240px;
+  height: 580px;
+  background-color: #7A8B95;
+  border: 5px solid #311118;
+  color: white;
+  padding: 10px 5px;
+}
+
+.rules-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  font-weight: 700;
+}
+
+.rules-list h6 {
+  margin-bottom: 8px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.rules-list p {
+  text-align: left;
+  color: black;
+}
+
+.rules-list td {
+  color: black;
+}
+
+.rules-list td:first-child {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.rules-list td:last-child {
+  text-align: left;
+}
+
+.rules-list button {
+  padding: 10px;
+  background-color: #5C6883;
+  font-size: 20px;
+  border: 1px solid #311118;
+  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+}
+
 .footer {
   padding: 10px 0;
   margin-top: 10px;
@@ -41,5 +101,4 @@ a {
 .footer-links {
   display: flex;
   justify-content: space-around;
-  list-style: none;
 }
