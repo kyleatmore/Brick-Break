@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   canvas.height = 600;
   canvas.width = 700;
   const ctx = canvas.getContext('2d');
-  const game = new Game(ctx);
+  let game = new Game(ctx);
 
   window.game = game;
   window.paddle = game.paddle;
@@ -20,5 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
     game.start();
     const startModal = document.getElementById('start-game');
     startModal.className += " hidden";
+  });
+
+  const playAgainButton = document.getElementById('play-again button');
+  playAgainButton.addEventListener('click', () => {
+    game = new Game(ctx);
+    game.start();
+    const playAgainModal = document.getElementById('play-again');
+    playAgainModal.className += " hidden";
   });
 });

@@ -13,7 +13,7 @@ li {
   display: none;
 }
 
-#start-game {
+#start-game, #play-again {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -61,9 +61,15 @@ a {
 }
 
 .score {
-  padding: 5px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 3px solid #311118;
+  background-color: #7A8B95;
+}
+
+.score h6 {
+  margin: 0;
 }
 
 .rules-aside {
