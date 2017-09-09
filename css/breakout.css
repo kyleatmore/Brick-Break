@@ -2,8 +2,6 @@ body {
   background-image: url("../assets/sci_fi_bg1.jpg");
   background-color: #778095;
   height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -38,9 +36,15 @@ a {
   margin: 0 auto;
 }
 
-#board {
+.game-box {
   border: 5px solid #311118;
   background-color: #5C6883;
+}
+
+.score {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .rules-aside {
