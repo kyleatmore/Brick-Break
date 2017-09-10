@@ -18,15 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const startButton = document.getElementById('start-button');
   startButton.addEventListener('click', () => {
     game.start();
-    const startModal = document.getElementById('start-game');
-    startModal.className += " hidden";
+    const startModal = document.getElementsByClassName('start-game')[0];
+    startModal.className = " hidden";
   });
 
   const playAgainButton = document.getElementById('play-again button');
   playAgainButton.addEventListener('click', () => {
     game = new Game(ctx);
     game.start();
-    const playAgainModal = document.getElementById('play-again');
+    const playAgainModal = document.getElementsByClassName('play-again')[0];
     playAgainModal.className += " hidden";
   });
 });

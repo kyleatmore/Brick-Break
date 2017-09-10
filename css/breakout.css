@@ -13,7 +13,7 @@ li {
   display: none;
 }
 
-#start-game, #play-again {
+.start-game, .play-again {
   position: absolute;
   top: 50%;
   left: 50%;
