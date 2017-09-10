@@ -78,6 +78,10 @@ a {
   font-weight: bold;
 }
 
+.remaining-balls {
+  height: 16px;
+}
+
 .rules-aside {
   width: 240px;
   height: 580px;
