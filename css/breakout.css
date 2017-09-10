@@ -60,7 +60,7 @@ a {
   background-color: #5C6883;
 }
 
-.score {
+.game-header {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -68,8 +68,14 @@ a {
   background-color: #7A8B95;
 }
 
-.score h6 {
+.game-header h6 {
   margin: 0;
+  text-decoration: none;
+}
+
+#score, #final-score {
+  color: #311118;
+  font-weight: bold;
 }
 
 .rules-aside {
