@@ -8,13 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const ctx = canvas.getContext('2d');
   let game = new Game(ctx);
 
-  window.game = game;
-  window.paddle = game.paddle;
-  window.bricks = game.bricks;
-  window.ctx = ctx;
-  window.ball = game.ball;
-
-
   const startButton = document.getElementById('start-button');
   startButton.addEventListener('click', () => {
     game.start();
@@ -28,5 +21,19 @@ document.addEventListener('DOMContentLoaded', () => {
     game.start();
     const playAgainModal = document.getElementsByClassName('play-again')[0];
     playAgainModal.className += " hidden";
+  });
+
+  const muteButton = document.getElementById('mute-button');
+  muteButton.addEventListener('click', () => {
+    const audioEls = document.getElementsByTagName('audio');
+    for (let i = 0; i < audioEls.length; i++) {
+      audioEls[i].muted = !audioEls[i].muted;
+    }
+
+    if (muteButton.textContent === 'Mute Sounds') {
+      muteButton.textContent = 'Unmute Sounds';
+    } else {
+      muteButton.textContent = 'Mute Sounds';
+    }
   });
 });
