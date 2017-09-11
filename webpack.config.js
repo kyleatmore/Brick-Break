@@ -22,7 +22,7 @@ plugins = plugins.concat(
 );
 
 module.exports = {
-  entry: './breakout.js',
+  entry: './brick_break.js',
   output: {
     filename: './lib/bundle.js',
   },

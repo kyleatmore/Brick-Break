@@ -1,8 +1,8 @@
-# Breakout Clone (name TBD)
+# Brick Break
 
 ### Background
 
-Breakout Clone (name TBD) is a JavaScript game inspired by Atari's Breakout video game.
+Brick Break is a JavaScript game inspired by Atari's Breakout video game.
 The goal of the game is to  bounce a ball on a paddle in order to break all of the bricks.
 
 ### Functionality & MVP
