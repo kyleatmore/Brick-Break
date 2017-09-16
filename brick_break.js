@@ -1,5 +1,5 @@
 import Game from './lib/game';
-import Brick from './lib/brick';
+import levels from './lib/levels';
 
 document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('board');
