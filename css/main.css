@@ -9,11 +9,7 @@ li {
   list-style: none;
 }
 
-.hidden {
-  display: none;
-}
-
-.start-game, .play-again {
+.start-game, .play-again, .level-display {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,10 +17,29 @@ li {
   z-index: 999;
   background-color: #7A8B95;
   border: 3px solid #311118;
-  height: 80px;
   width: 300px;
   padding: 20px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-game {
+  height: 80px;
+}
+
+.play-again {
+  height: 110px;
+}
+
+.hidden {
+  display: none;
+}
+
+.level-display {
+  height: 40px;
 }
 
 .game-screen {
@@ -130,6 +145,7 @@ button {
   border: 1px solid #311118;
   font-family: 'Orbitron', sans-serif;
   cursor: pointer;
+  width: 180px;
 }
 
 .footer {
