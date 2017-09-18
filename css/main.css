@@ -138,6 +138,14 @@ h6 {
   text-align: left;
 }
 
+img {
+  vertical-align: middle;
+}
+
+img.powerup {
+  height: 20px;
+}
+
 button {
   padding: 10px;
   background-color: #5C6883;
