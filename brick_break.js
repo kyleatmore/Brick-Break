@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (muteButton.textContent === 'Mute Sounds') {
-      muteButton.textContent = 'Unmute Sounds';
+      muteButton.textContent = 'Unmute';
     } else {
       muteButton.textContent = 'Mute Sounds';
     }
